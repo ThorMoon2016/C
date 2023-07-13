@@ -83,6 +83,7 @@ p{
 
 .header{
     background: radial-gradient(#dbb240);
+    margin-top: -40px;
 }
 
 .categories{
@@ -700,37 +701,22 @@ form a{
     margin-bottom: 10px;
   }
   
-  .input-box {
-    margin-bottom: 10px;
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-  .input-box input {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #0a0a0a;
-    border-radius: 15px;
-    font-size: 18px; /* Prilagodite vrijednost prema željenom fontu */
-  }
-  
-  .input-box:not(:last-child) {
-    margin-bottom: 20px;
-  }
+ 
   
   
   .start-order-box {
+    width: 100px;
+    height: 100px;
     background-color: yellow;
     color: black;
     text-align: center;
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 25px;
-    margin-left: 600px;
-    margin-right: 600px;
+    line-height: 100px; /* Centriranje teksta u krugu */
+    border-radius: 50%; /* Pretvara kvadratni element u krug */
+    font-size: 20px;
+    margin: 0 auto; /* Automatsko poravnanje lijeve i desne margine */
   }
   
-
+  
   #customer-details-container {
     border: 1px solid rgb(0, 0, 0);
     padding: 20px;
@@ -742,12 +728,7 @@ form a{
       height: auto;
     }
   
-   
-    .start-order-box {
-      font-size: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+
   }
   
   @media (max-width: 767px) {
@@ -821,10 +802,28 @@ form a{
   }
   
   @media (max-width: 767px) {
-    .input-box {
+    .input-box.start-order-box {
       width: calc(100% - 20px);
       margin-left: 5px;
       margin-right: 5px;
     }
+  }
+  
+  .input-box {
+    margin-bottom: 10px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #0a0a0a;
+    border-radius: 15px;
+    font-size: 18px; /* Prilagodite vrijednost prema željenom fontu */
+  }
+  
+  .input-box:not(:last-child) {
+    margin-bottom: 20px;
   }
   
